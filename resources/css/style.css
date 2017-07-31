@@ -5,7 +5,7 @@ html {
   font-size: 16px;
 }
 
-header, footer, div, nav, li, span, img, h1, h2 {
+header, footer, div, nav, li, span, img, h1, h2, h3 {
   border: 1px solid purple;
 }
 
@@ -30,12 +30,15 @@ header, footer, div, nav, li, span, img, h1, h2 {
 
 .image-container img {
   display: block;
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
+  /*
   .main-content {
     top: 2.5625rem;
   }
+  */
 }
 
 /* Header */
@@ -88,6 +91,7 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
+  /*
   header .desktop {
     display: none;
   }
@@ -118,6 +122,7 @@ header .mobile {
     line-height: 1.6;
     padding: .1875rem .5rem;
   }
+  */
 }
 
 /* Sign Up Section */
@@ -182,11 +187,10 @@ header .mobile {
   justify-content: center;
   height: 5rem;
   margin-top: 1.625rem;
-  /*padding: 1.25rem 7.25rem;*/
-  
 }
 
 @media only screen and (max-width: 760px) {
+  /*
   #sign-up-section {
     align-items: center;
     height: 28rem;
@@ -216,9 +220,11 @@ header .mobile {
   #sign-up-cta h2 {
     font-size: 2.25rem;
   }
+  */
 }
 
 @media only screen and (max-width: 450px) {
+/*
   #sign-up-section {
     height: 20rem;
   }
@@ -230,6 +236,7 @@ header .mobile {
   #sign-up-cta h2 {
     font-size: 2rem;
   }
+  */
 }
 
 /* Features Section */
@@ -237,15 +244,16 @@ header .mobile {
 #features-section {
   background-color: #f3f3f3;
   display: flex;
-  justify-content: space-between;
-  padding: 4rem 5%;
+  justify-content: center;
+  padding: 4rem 0 2.875rem 0;
 }
 
 .feature {
   background-color: white;
-  flex-grow: 1;
-  margin: 0px 1.25rem;
-  padding: 2rem;
+  flex: 1;
+  height: 39.6875rem;
+  margin: 0px 1.1875rem;
+  padding: 2rem 2rem 0 2rem;
 }
 
 .feature .image-container {
@@ -254,11 +262,17 @@ header .mobile {
   width: 90%;
 }
 
+.feature .content {
+  height: 11.6875rem;
+  margin: 2.5rem auto 0 auto;
+  width: 90%;
+}
+
 .feature h2 {
   color: #4a4a4a;
   font-size: 2.25rem;
   font-weight: bold;
-  padding-bottom: .5rem;
+  padding-top: .5rem;
 }
 
 .feature h3 {
@@ -269,6 +283,7 @@ header .mobile {
 }
 
 @media only screen and (max-width: 890px) {
+  /*
   .feature h2 {
     font-size: 1.125rem;
     font-weight: normal;
@@ -279,9 +294,11 @@ header .mobile {
     font-size: .875rem;
     line-height: 1.4;
   }
+  */
 }
 
 @media only screen and (max-width: 760px) {
+  /*
   #features-section {
     flex-flow: column;
     padding: 0;
@@ -291,6 +308,7 @@ header .mobile {
     margin: 0;
     padding: 1.25rem 1rem 0 1rem;
   }
+  */
 }
 
 /* Filters Section */
@@ -319,11 +337,13 @@ header .mobile {
 }
 
 #filters-section .images-container {
+  display: flex;
   padding: 0 1%;
   max-width: 100%;
 }
 
 @media only screen and (max-width: 760px) {
+  /*
   #filters-section {
     padding: 1.5rem 0 0 0;
   }
@@ -351,6 +371,7 @@ header .mobile {
   #filters-section .extra {
     display: none;
   }
+  */
 }
 
 /* Quotes Section */
@@ -422,7 +443,9 @@ footer .copyright {
 }
 
 @media only screen and (max-width: 760px) {
+  /*
   footer .content {
     font-size: .625rem;
   }
+  */
 }
