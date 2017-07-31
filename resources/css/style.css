@@ -5,7 +5,7 @@ html {
   font-size: 16px;
 }
 
-header, footer, div, nav, li, span, img {
+header, footer, div, nav, li, span, img, h1, h2 {
   border: 1px solid purple;
 }
 
@@ -122,27 +122,33 @@ header .mobile {
 
 /* Sign Up Section */
 
-#sign-up-section {
-  align-items: flex-start;
-  display: flex;
-  height: 43.5rem;
-  justify-content: flex-start;
+.banner {
+  background-image: url(../images/banner-landingpage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+#sign-up-section {
+  display: flex;
+} 
 
 #sign-up-cta {
   background-color: #9dc20b;
   border: solid 1px #979797;
   border-radius: 4px;
-  padding: 0 5rem 2.5rem 5rem;
+  margin: 10.625rem 6.25rem;
+  padding: 2rem 5rem 3.5rem 5rem;
 }
 
 #sign-up-cta .content {
+  align-items: center;
   color: white;
+  display: flex;
+  flex-direction: column;
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   line-height: 1.4;
-  margin-top: 2rem;
-  width: 25.625rem;
 }
 
 #sign-up-cta h1 {
@@ -163,12 +169,21 @@ header .mobile {
 
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
-  padding-bottom: .75rem;
+}
+
+#sign-up-cta .email {
+  padding-top: 0.75rem; 
+  width: 25.5rem;
 }
 
 #sign-up-cta .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
   margin-top: 1.625rem;
-  padding: 1.25rem 7.25rem;
+  /*padding: 1.25rem 7.25rem;*/
+  
 }
 
 @media only screen and (max-width: 760px) {
@@ -344,13 +359,15 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   color: #4a4a4a;
-  
   font-family: "Palatino", serif;
   font-size: 1.875rem;
   font-style: italic;
@@ -363,19 +380,22 @@ header .mobile {
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
-    padding: 1.875rem .625rem;
+  #quotes-section .content {
+    /*padding: 1.875rem .625rem;*/
   }
 
-  #quotes-section quote {
-    font-size: 1.5rem;
+  #quotes-section .quote {
+    /*font-size: 1.5rem;
     line-height: 1.4;
+    */
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
+    /*
     display: block;
     margin: auto;
     padding-top: 1rem;
+    */
   }
 }
 
