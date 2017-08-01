@@ -4,11 +4,11 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
-
+/* for development
 header, footer, div, nav, li, span, img, h1, h2, h3 {
   border: 1px solid purple;
 }
-
+*/
 .main-content {
   position: relative;
   top: 5.3125rem; /* To offset for fixed header. */
